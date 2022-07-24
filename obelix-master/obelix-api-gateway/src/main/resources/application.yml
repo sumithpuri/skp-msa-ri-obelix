@@ -1,0 +1,36 @@
+#Author - Sumith Puri
+#Version - 1.0
+#Since - 01-06-2020
+#Credits - Code Samples at https://www.javainuse.com/spring/cloud-gateway-eureka 
+#Notes - Modify the Routes for API Gateway as per your Service Implementation. Try to Not Hard Code the Absolute URL
+#Notes - At Implementation Time or at any Time During Usage, You may Consider Moving Properties to the Config Server
+
+server:
+  port: 8087
+
+spring:
+  application:
+    name: obelix-api-gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true
+          enabled: true
+      routes:
+      - id: inventoryModule
+        uri: lb://OBELIX-DEMO-INVENTORY-SERVICE
+        predicates:
+        - Path=/saleorder/**
+      - id: saleorderModule
+        uri: lb://OBELIX-DEMO-SALEORDER-SERVICE
+        predicates:
+        - Path=/inventory/**
+        
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 240
+    lease-expiration-duration-in-seconds: 240
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
