@@ -10,7 +10,7 @@ server:
 
 spring:
   application:
-    name: api-gateway-service
+    name: obelix-api-gateway-service
   cloud:
     gateway:
       discovery:
@@ -18,14 +18,14 @@ spring:
           lower-case-service-id: true
           enabled: true
       routes:
-      - id: producerModule
-        uri: lb://FIRST-SERVICE
+      - id: inventoryModule
+        uri: lb://OBELIX-DEMO-INVENTORY-SERVICE
         predicates:
-        - Path=/producer/**
-      - id: consumerModule
-        uri: lb://SECOND-SERVICE
+        - Path=/saleorder/**
+      - id: saleorderModule
+        uri: lb://OBELIX-DEMO-SALEORDER-SERVICE
         predicates:
-        - Path=/consumer/**
+        - Path=/inventory/**
         
 eureka:
   instance:
