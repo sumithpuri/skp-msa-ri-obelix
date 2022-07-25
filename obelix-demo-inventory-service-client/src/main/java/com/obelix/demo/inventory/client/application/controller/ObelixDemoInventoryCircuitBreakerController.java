@@ -15,9 +15,9 @@ public class ObelixDemoInventoryCircuitBreakerController {
     @Autowired
     private ObelixDemoInventoryClientController obelixDemoInventoryClientController;
 
-    @RequestMapping("/inventorycb/portal")
+    @RequestMapping("/obelixdemocb/inventory")
     public String testNow(Model model) {
         model.addAttribute("inventoryCBMsg", obelixDemoInventoryClientController.test());
-        return "authoring-view";
+        return "inventory-view";
     }
 }

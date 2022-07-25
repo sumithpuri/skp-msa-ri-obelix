@@ -21,11 +21,11 @@ spring:
       - id: inventoryModule
         uri: lb://OBELIX-DEMO-INVENTORY-SERVICE
         predicates:
-        - Path=/saleorder/**
+        - Path=/obelixdemo/inventory/**
       - id: saleorderModule
         uri: lb://OBELIX-DEMO-SALEORDER-SERVICE
         predicates:
-        - Path=/inventory/**
+        - Path=/obelixdemo/saleorder/**
         
 eureka:
   instance:

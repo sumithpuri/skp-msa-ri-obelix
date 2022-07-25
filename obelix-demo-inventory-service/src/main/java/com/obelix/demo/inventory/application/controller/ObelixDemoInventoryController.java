@@ -10,19 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RefreshScope
-@RequestMapping("/inventory")
+@RequestMapping("/obelixdemo")
 public class ObelixDemoInventoryController {
 
-	@GetMapping("/portal")
+	@GetMapping("/inventory")
 	public String test() {
 		return "Obelix Demo - Inventory Service";
 	}
 
 	 @Value("${user.role}")
-		private String role;
+	private String role;
 
-		@GetMapping(value = "/user/{username}", produces = MediaType.TEXT_PLAIN_VALUE)
-		public String whoami(@PathVariable("username") String username) {
+	@GetMapping(value = "/user/{username}", produces = MediaType.TEXT_PLAIN_VALUE)
+	public String whoami(@PathVariable("username") String username) {
 			return String.format("Obelix Demo - Inventory - You're %s, System Set Role is %s...\n", username, role);
-		}
+	}
 }

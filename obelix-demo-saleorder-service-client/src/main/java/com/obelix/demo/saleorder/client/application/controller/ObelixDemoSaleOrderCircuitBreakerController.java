@@ -15,7 +15,7 @@ public class ObelixDemoSaleOrderCircuitBreakerController {
     @Autowired
     private ObelixDemoSaleOrderClientController obelixDemoSaleOrderClientController;
 
-    @RequestMapping("/saleordercb/contract")
+    @RequestMapping("/obelixdemocb/saleorder")
     public String testNow(Model model) {
         model.addAttribute("saleorderCBMsg", obelixDemoSaleOrderClientController.test());
         return "saleorder-view";
