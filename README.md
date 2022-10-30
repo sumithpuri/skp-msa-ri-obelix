@@ -6,17 +6,19 @@ MIT License, Copyright (c) 2018-19, <a href="https://www.cakeresume.com/sumith-k
 https://github.com/sumithpuri 
 <br>
 
-<p align='center'>
-<img src='https://drive.google.com/uc?export=view&id=1E5EKSCMw5VKz3LHP1n48f6xFFmfEEMjo' style="width:75%;">
-</p>
-
-<hr>
 
 <p align='center'>
 <img src='https://drive.google.com/uc?export=view&id=1cAhcd1-zsaFXtb2t0rNsdt9d78Pi9d2S' style="height:125%;">
 </p>
 
 <hr>
+
+<p align='center'>
+<img src='https://drive.google.com/uc?export=view&id=1E5EKSCMw5VKz3LHP1n48f6xFFmfEEMjo' style="width:75%;">
+</p>
+
+<hr>
+
 
 <div align="center">
 
