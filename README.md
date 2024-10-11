@@ -7,14 +7,12 @@ https://github.com/sumithpuri
 <br>
 
 
-<p align='center'>
-<img src='https://i.ibb.co/DMKd0Lc/skp-obelix-msa-ri-001.png' style="height:125%;">
-</p>
+
 
 <hr>
 
 <p align='center'>
-<img src='https://i.ibb.co/LdKCHW2/Obelix-MSA-Reference-Implementation-Service-Invocation-Flow-Final-Reference.jpg' style="width:75%;">
+<img src='https://i.ibb.co/LdKCHW2/Obelix-MSA-Reference-Implementation-Service-Invocation-Flow-Final-Reference.jpg' style="width:100%;">
 </p>
 
 <hr>
@@ -27,6 +25,10 @@ https://github.com/sumithpuri
 </div>
 
 <hr>
+
+<p align='center'>
+<img src='https://i.ibb.co/DMKd0Lc/skp-obelix-msa-ri-001.png' style="height:125%;">
+</p>
 
 <div align="center">
 	
